@@ -1,0 +1,8 @@
+﻿l'API qu'on va utiliser dans le projet c'est une API REST qu'on est en entrain de développer dans notre cours de service d'échange de données.
+
+Dans le cadre de notre cours de service d'échange de données, nous développons une API REST qui permettra d'échanger des informations entre un serveur et un client de manière efficace et standardisée. L'API repose sur les principes du REST, ce qui signifie qu'elle est sans état (stateless) et utilise les verbes HTTP tels que GET, POST, PUT et DELETE pour interagir avec les ressources. Ces ressources sont identifiées par des URI et les données échangées sont généralement structurées en format JSON. Le développement de cette API implique de définir des endpoints pour chaque fonctionnalité, de gérer les requêtes des utilisateurs, et de s'assurer que les réponses fournies respectent les normes en termes de sécurité et de performance.
+
+Ceci et le diagramme rationnel des données : 
+
+
+
