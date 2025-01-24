@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/vinylsDisplayFragment">
+
+    <fragment
+        android:id="@+id/vinylsDisplayFragment"
+        android:name="com.example.vinylparadise.présentation.VinylsVue"
+        android:label="fragment_vinyls_display"
+        tools:layout="@layout/fragment_vinyls_display" >
+        <action
+            android:id="@+id/action_vinylsDisplayFragment_to_vinylsParGenre"
+            app:destination="@id/vinylsParGenre" />
+        <action
+            android:id="@+id/action_vinylsDisplayFragment_to_detailReservationVue"
+            app:destination="@id/detailReservationVue" />
+    </fragment>
+    <fragment
+        android:id="@+id/vinylsParGenre"
+        android:name="com.example.vinylparadise.présentation.VinylsParGenreDisplayVue"
+
+        android:label="VinylsParGenre" >
+        <action
+            android:id="@+id/action_vinylsParGenre_to_detailReservationVue"
+            app:destination="@id/detailReservationVue" />
+    </fragment>
+    <fragment
+        android:id="@+id/creationVinylFragment"
+        android:name="com.example.vinylparadise.présentation.CreationVinylVue"
+        android:label="CreationVinylFragment" >
+        <action
+            android:id="@+id/action_creationVinylFragment_to_vinylsDisplayFragment"
+            app:destination="@id/vinylsDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailReservationVue"
+        android:name="com.example.vinylparadise.présentation.DetailReservationVue"
+        android:label="fragment_detail_reservation_vue"
+        tools:layout="@layout/fragment_detail_reservation_vue" />
+    <fragment
+        android:id="@+id/resultatFragment"
+        android:name="com.example.vinylparadise.présentation.rechercheVue"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" >
+        <action
+            android:id="@+id/action_resultsFragment_to_vinylsDisplayFragment"
+            app:destination="@id/vinylsDisplayFragment" />
+    </fragment>
+</navigation>
